@@ -30,4 +30,4 @@ HEADERS += \
     server.h
 
 #include ($$PWD/../QSimpleUpdater.pri)
-include ($$PWD/../QSimpleUpdater/QSimpleUpdater.pri)
+include ($$PWD/../MyEng/QSimpleUpdater/QSimpleUpdater.pri)
