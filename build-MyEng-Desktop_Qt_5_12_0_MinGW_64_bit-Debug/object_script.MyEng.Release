@@ -1,0 +1,10 @@
+release/main.o
+release/mainwindow.o
+release/Updater.o
+release/Downloader.o
+release/QSimpleUpdater.o
+release/qrc_qsimpleupdater.o
+release/moc_mainwindow.o
+release/moc_QSimpleUpdater.o
+release/moc_Updater.o
+release/moc_Downloader.o

@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainwindow.o
+debug/Updater.o
+debug/Downloader.o
+debug/QSimpleUpdater.o
+debug/qrc_qsimpleupdater.o
+debug/moc_mainwindow.o
+debug/moc_QSimpleUpdater.o
+debug/moc_Updater.o
+debug/moc_Downloader.o
