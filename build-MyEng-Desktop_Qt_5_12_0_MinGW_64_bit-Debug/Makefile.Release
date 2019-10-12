@@ -868,11 +868,21 @@ release/mainwindow.o: ../MyEng/mainwindow.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdesktopwidget.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qguiapplication.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qinputmethod.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLineEdit \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlineedit.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextcursor.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextformat.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qpen.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextoption.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QMenuBar \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmenubar.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmenu.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qaction.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qactiongroup.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QStatusBar \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstatusbar.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QWidget
