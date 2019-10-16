@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui widgets sql
 QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -17,13 +17,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    formone.cpp \
+    formvar.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    formone.h \
+    formvar.h \
     mainwindow.h
 
 FORMS += \
+    formone.ui \
+    formvar.ui \
     mainwindow.ui
 
 # Default rules for deployment.

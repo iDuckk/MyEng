@@ -1,9 +1,13 @@
+debug/formone.o
+debug/formvar.o
 debug/main.o
 debug/mainwindow.o
 debug/Updater.o
 debug/Downloader.o
 debug/QSimpleUpdater.o
 debug/qrc_qsimpleupdater.o
+debug/moc_formone.o
+debug/moc_formvar.o
 debug/moc_mainwindow.o
 debug/moc_QSimpleUpdater.o
 debug/moc_Updater.o
