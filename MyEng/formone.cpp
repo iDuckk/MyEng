@@ -7,7 +7,9 @@ FormOne::FormOne(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    s = new QString();
+
+
+    lEdit = ui->lineEdit; // I did this so I could use it in mainwindow
 
     /* Change style of button */
     ui->pushButton_play->setStyleSheet("QPushButton:hover {"
@@ -43,15 +45,36 @@ FormOne::FormOne(QWidget *parent) :
 
 FormOne::~FormOne()
 {
+    delete lEdit;
     delete ui;
+}
+
+void FormOne::DefaultLineEdit()
+{
+    ui->lineEdit->clear();
 }
 
 void FormOne::on_pushButton_play_clicked()
 {
-    emit sentWord(ui->lineEdit->text());
+
 }
 
-void FormOne::getLineWords(QString w)
+void FormOne::getLineWords(QString Wrus, QString wEng)
 {
-    ui->label->setText(w);
+    /* Got words from mainwindow */
+    ui->label->setText(Wrus); // Set text Lable
+    CorrectWeng = wEng;
+    CorrectWrus = Wrus;
+}
+
+void FormOne::on_lineEdit_returnPressed()
+{
+    if((ui->lineEdit->text() == CorrectWeng) || (CorrectWeng == "not zero")) // if "not zero", it means that it is first itiration
+    {
+            emit CorrectWord(ui->lineEdit->text());    //if WORDS are the same
+    }
+    else{
+            emit WrongWord(ui->lineEdit->text());   //if WORDS are not the same
+    }
+
 }

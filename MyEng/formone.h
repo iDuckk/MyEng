@@ -2,8 +2,12 @@
 #define FORMONE_H
 
 #include <QWidget>
+#include <QDebug>
 #include <QString>
-#include <QtSql>
+#include <QLineEdit>
+#include <QStringList>
+#include <QRandomGenerator>
+
 
 namespace Ui {
 class FormOne;
@@ -17,16 +21,23 @@ public:
     explicit FormOne(QWidget *parent = nullptr);
     ~FormOne();
 
-    QString *s;
+    QLineEdit *lEdit;
+    QString CorrectWeng = "not zero";
+    QString CorrectWrus;
+    QStringList formlistEng;
+    QStringList formlistRus;
 
+    void DefaultLineEdit();
 private slots:
     void on_pushButton_play_clicked();
-    void getLineWords(QString);
+    void getLineWords(QString, QString);
+    void on_lineEdit_returnPressed();
+
 private:
     Ui::FormOne *ui;
-    QSqlDatabase db;
 signals:
-        void sentWord(QString);
+        void CorrectWord(QString);
+        void WrongWord(QString);
 };
 
 #endif // FORMONE_H

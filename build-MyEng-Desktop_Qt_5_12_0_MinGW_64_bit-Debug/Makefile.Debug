@@ -244,163 +244,18 @@ debug/moc_formone.cpp: ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/Q
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfiledevice.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qvector2d.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtouchdevice.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QDebug \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QString \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSql \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSqlDepends \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QtCore \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QtCoreDepends \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qeventloop.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractitemmodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractnativeeventfilter.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractproxymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractstate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstracttransition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qanimationgroup.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qarraydataops.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qarraydatapointer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbasictimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbitarray.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbuffer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbytearraymatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcache.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborarray.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborvalue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdatetime.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborcommon.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qregularexpression.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/quuid.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcbormap.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborstream.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfloat16.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcollator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcommandlineoption.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcommandlineparser.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcoreapplication.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcryptographichash.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdeadlinetimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qelapsedtimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdir.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfileinfo.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdiriterator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qeasingcurve.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qendian.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qeventtransition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qexception.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfactoryinterface.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfileselector.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QObject \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfilesystemwatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfinalstate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuture.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfutureinterface.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrunnable.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qresultstore.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuturesynchronizer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuturewatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qhistorystate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qidentityproxymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qisenum.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qitemselectionmodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsonarray.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsonvalue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsondocument.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsonobject.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlibrary.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlibraryinfo.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qversionnumber.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlinkedlist.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlockfile.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qloggingcategory.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmath.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmessageauthenticationcode.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmetaobject.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmimedata.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmimedatabase.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmimetype.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qobjectcleanuphandler.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qoperatingsystemversion.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qparallelanimationgroup.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpauseanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qplugin.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpointer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpluginloader.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qprocess.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpropertyanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qvariantanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qqueue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qreadwritelock.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qresource.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsavefile.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qscopedvaluerollback.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qscopeguard.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsemaphore.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsequentialanimationgroup.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsettings.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsharedmemory.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsignalmapper.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsignaltransition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsocketnotifier.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsortfilterproxymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstack.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstandardpaths.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstatemachine.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstorageinfo.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstringlistmodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsystemsemaphore.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtemporarydir.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtemporaryfile.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtextboundaryfinder.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtextcodec.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qthread.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qthreadpool.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qthreadstorage.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtimeline.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtimezone.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtranslator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtypetraits.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qwaitcondition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qwineventnotifier.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qxmlstream.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtcoreversion.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsqlglobal.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsql-config.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqldatabase.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqldriver.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqldriverplugin.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlerror.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlfield.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlindex.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlrecord.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlquery.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlquerymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlrelationaldelegate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qitemdelegate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstyleoption.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractspinbox.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qvalidator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qicon.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qslider.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractslider.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstyle.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qtabbar.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qtabwidget.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qrubberband.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLineEdit \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlineedit.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlistview.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractitemview.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qcombobox.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlrelationaltablemodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqltablemodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlresult.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsqlversion.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextcursor.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextformat.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qpen.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextoption.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QRandomGenerator \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
 		../MyEng/formone.h \
 		debug/moc_predefs.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/bin/moc.exe
@@ -631,7 +486,25 @@ debug/moc_mainwindow.cpp: ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/includ
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QObject \
 		../MyEng/formone.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QWidget \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QDebug \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QString \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLineEdit \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlineedit.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextcursor.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextformat.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qpen.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextoption.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QRandomGenerator \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
+		../MyEng/formvar.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QMessageBox \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmessagebox.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdialog.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSql \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSqlDepends \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QtCore \
@@ -677,7 +550,6 @@ debug/moc_mainwindow.cpp: ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/includ
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qexception.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfactoryinterface.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfileselector.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfilesystemwatcher.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfinalstate.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuture.h \
@@ -717,7 +589,6 @@ debug/moc_mainwindow.cpp: ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/includ
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpropertyanimation.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qvariantanimation.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qqueue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qreadwritelock.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qresource.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsavefile.h \
@@ -776,7 +647,6 @@ debug/moc_mainwindow.cpp: ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/includ
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstyle.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qtabbar.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qrubberband.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlistview.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractitemview.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
@@ -785,13 +655,7 @@ debug/moc_mainwindow.cpp: ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/includ
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqltablemodel.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlresult.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsqlversion.h \
-		../MyEng/formvar.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QMessageBox \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmessagebox.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdialog.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QSqlQuery \
 		../MyEng/mainwindow.h \
 		debug/moc_predefs.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/bin/moc.exe
@@ -1278,167 +1142,24 @@ debug/formone.o: ../MyEng/formone.cpp ../MyEng/formone.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfiledevice.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qvector2d.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtouchdevice.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QDebug \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QString \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSql \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSqlDepends \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QtCore \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QtCoreDepends \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qeventloop.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractitemmodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractnativeeventfilter.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractproxymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstractstate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qabstracttransition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qanimationgroup.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qarraydataops.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qarraydatapointer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbasictimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbitarray.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbuffer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qbytearraymatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcache.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborarray.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborvalue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdatetime.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborcommon.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qregularexpression.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/quuid.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcbormap.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcborstream.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfloat16.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcollator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcommandlineoption.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcommandlineparser.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcoreapplication.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcryptographichash.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdeadlinetimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qelapsedtimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdir.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfileinfo.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qdiriterator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qeasingcurve.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qendian.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qeventtransition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qexception.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfactoryinterface.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfileselector.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QObject \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfilesystemwatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfinalstate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuture.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfutureinterface.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrunnable.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qresultstore.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuturesynchronizer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuturewatcher.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qhistorystate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qidentityproxymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qisenum.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qitemselectionmodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsonarray.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsonvalue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsondocument.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qjsonobject.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlibrary.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlibraryinfo.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qversionnumber.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlinkedlist.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qlockfile.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qloggingcategory.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmath.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmessageauthenticationcode.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmetaobject.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmimedata.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmimedatabase.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qmimetype.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qobjectcleanuphandler.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qoperatingsystemversion.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qparallelanimationgroup.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpauseanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qplugin.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpointer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpluginloader.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qprocess.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpropertyanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qvariantanimation.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qqueue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qreadwritelock.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qresource.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsavefile.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qscopedvaluerollback.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qscopeguard.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsemaphore.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsequentialanimationgroup.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsettings.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsharedmemory.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsignalmapper.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsignaltransition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsocketnotifier.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsortfilterproxymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstack.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstandardpaths.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstatemachine.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstorageinfo.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qstringlistmodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsystemsemaphore.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtemporarydir.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtemporaryfile.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtextboundaryfinder.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtextcodec.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qthread.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qthreadpool.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qthreadstorage.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtimeline.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtimer.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtimezone.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtranslator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtypetraits.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qwaitcondition.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qwineventnotifier.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qxmlstream.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qtcoreversion.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsqlglobal.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsql-config.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqldatabase.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqldriver.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqldriverplugin.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlerror.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlfield.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlindex.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlrecord.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlquery.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlquerymodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlrelationaldelegate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qitemdelegate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstyleoption.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractspinbox.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qvalidator.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qicon.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qslider.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractslider.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstyle.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qtabbar.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qtabwidget.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qrubberband.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLineEdit \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlineedit.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlistview.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractitemview.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qcombobox.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlrelationaltablemodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqltablemodel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlresult.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsqlversion.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextcursor.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextformat.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qpen.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextoption.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QRandomGenerator \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
 		ui_formone.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QVariant \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QApplication \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qapplication.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qcoreapplication.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qeventloop.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdesktopwidget.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qguiapplication.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qinputmethod.h \
@@ -1450,15 +1171,10 @@ debug/formone.o: ../MyEng/formone.cpp ../MyEng/formone.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QHBoxLayout \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLabel \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlabel.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLineEdit \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlineedit.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextcursor.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextformat.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qpen.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextoption.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qicon.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QSpacerItem \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\formone.o ..\MyEng\formone.cpp
@@ -1709,7 +1425,25 @@ debug/main.o: ../MyEng/main.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QObject \
 		../MyEng/formone.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QWidget \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QDebug \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QString \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLineEdit \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlineedit.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextcursor.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextformat.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qpen.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextoption.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QRandomGenerator \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
+		../MyEng/formvar.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QMessageBox \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmessagebox.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdialog.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSql \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSqlDepends \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QtCore \
@@ -1755,7 +1489,6 @@ debug/main.o: ../MyEng/main.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qexception.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfactoryinterface.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfileselector.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfilesystemwatcher.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfinalstate.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuture.h \
@@ -1795,7 +1528,6 @@ debug/main.o: ../MyEng/main.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpropertyanimation.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qvariantanimation.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qqueue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qreadwritelock.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qresource.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsavefile.h \
@@ -1854,7 +1586,6 @@ debug/main.o: ../MyEng/main.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstyle.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qtabbar.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qrubberband.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlistview.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractitemview.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
@@ -1863,13 +1594,7 @@ debug/main.o: ../MyEng/main.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqltablemodel.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlresult.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsqlversion.h \
-		../MyEng/formvar.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QMessageBox \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmessagebox.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdialog.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QSqlQuery \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QApplication \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qapplication.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdesktopwidget.h \
@@ -1995,7 +1720,25 @@ debug/mainwindow.o: ../MyEng/mainwindow.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QObject \
 		../MyEng/formone.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QWidget \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QDebug \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QString \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QLineEdit \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlineedit.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextcursor.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextformat.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qpen.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtGui/qtextoption.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QRandomGenerator \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
+		../MyEng/formvar.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QMessageBox \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmessagebox.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdialog.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSql \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QtSqlDepends \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QtCore \
@@ -2041,7 +1784,6 @@ debug/mainwindow.o: ../MyEng/mainwindow.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qexception.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfactoryinterface.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfileselector.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QStringList \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfilesystemwatcher.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfinalstate.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qfuture.h \
@@ -2081,7 +1823,6 @@ debug/mainwindow.o: ../MyEng/mainwindow.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qpropertyanimation.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qvariantanimation.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qqueue.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qrandom.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qreadwritelock.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qresource.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/qsavefile.h \
@@ -2140,7 +1881,6 @@ debug/mainwindow.o: ../MyEng/mainwindow.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qstyle.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qtabbar.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qrubberband.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qframe.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qlistview.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractitemview.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
@@ -2149,13 +1889,7 @@ debug/mainwindow.o: ../MyEng/mainwindow.cpp ../MyEng/mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqltablemodel.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qsqlresult.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/qtsqlversion.h \
-		../MyEng/formvar.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QPushButton \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qpushbutton.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QMessageBox \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qmessagebox.h \
-		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/qdialog.h \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtSql/QSqlQuery \
 		ui_mainwindow.h \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtCore/QVariant \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/include/QtWidgets/QApplication \
