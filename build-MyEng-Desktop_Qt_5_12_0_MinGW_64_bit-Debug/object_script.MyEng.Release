@@ -1,3 +1,4 @@
+release/challenges.o
 release/formone.o
 release/formvar.o
 release/main.o
@@ -6,6 +7,7 @@ release/Updater.o
 release/Downloader.o
 release/QSimpleUpdater.o
 release/qrc_qsimpleupdater.o
+release/moc_challenges.o
 release/moc_formone.o
 release/moc_formvar.o
 release/moc_mainwindow.o

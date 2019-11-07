@@ -5,7 +5,7 @@ static const QString DEFS_URL = "file:///D:/Repository/MyEng/QSimpleUpdater/defi
 
 /********** TASK TASK TASK TASK TASK ****************************
 
-    Почему то складывает arNum , а не делает список Int значений
+    Сделать OneWord функцию, а не в кнопке
 
 *****************************************************************/
 MainWindow::MainWindow(QWidget *parent)
@@ -32,14 +32,20 @@ MainWindow::MainWindow(QWidget *parent)
     FormO->setVisible(false);
     FormO->setEnabled(false);
 
-    connect(FormO, SIGNAL(CorrectWord(QString)), this, SLOT(CorrectAnswer(QString))); //recieved word from FormOne`s lineEdit if CORRECT word
-    connect(FormO, SIGNAL(WrongWord(QString)), this, SLOT(WrongAnswer(QString))); //recived word from FormOne`s lineEdit if WRONG word
+    connect(FormO, SIGNAL(CorrectWord(QString)), this, SLOT(CorrectAnswer(QString))); //*** if CORRECT word *** recieved word from FormOne`s lineEdit
+    connect(FormO, SIGNAL(WrongWord(QString)), this, SLOT(WrongAnswer(QString))); //*** if WRONG word *** recived word from FormOne`s lineEdit
     connect(this, SIGNAL(sendWordline(QString, QString)), FormO, SLOT(getLineWords(QString, QString))); //send word from MaindWindow(db) to FORMONE`s lable
 
     /* Create Widget of chalange VarWord */
     formVar = new FormVar(ui->widget_one);
     formVar->setVisible(false);
     formVar->setEnabled(false);
+
+    /* chllenge Window */
+    chellange = new Challenges(this);
+    connect(chellange,SIGNAL(RadioOneW(bool)),this,SLOT(RadioCheckOne(bool))); //if challenge OneWOrd
+    connect(chellange,SIGNAL(RadioVar(bool)),this,SLOT(RadioCheckVar(bool))); //If challenge Var
+    connect(chellange, SIGNAL(StartChallenge()), this, SLOT(StartChallengeMain())); //start challenge
 
     /* Open Database */
     db = QSqlDatabase::addDatabase("QSQLITE");
@@ -49,6 +55,7 @@ MainWindow::MainWindow(QWidget *parent)
     }else{
         qDebug()<<"Database opened";
     }
+
 
 //*************************************************************************************************************************************
 
@@ -77,7 +84,48 @@ MainWindow::~MainWindow()
 {
     delete FormO;
     delete formVar;
+    delete chellange;
     delete ui;
+}
+
+void MainWindow::RadioCheckOne(bool check)
+{
+    //choosen challenge OneWord
+    challengeOneW = check;
+    challengeVar = false;
+}
+
+void MainWindow::RadioCheckVar(bool check)
+{
+    //choosen challenge Var
+    challengeVar = check;
+    challengeOneW = false;
+}
+
+void MainWindow::StartChallengeMain()
+{
+    if(challengeOneW)
+    {
+        //Challenge OneWord
+        FormO->setVisible(true);
+        formVar->setVisible(false);
+
+        /* send lists of Word */
+        FormO->formlistRus = listRus;
+        FormO->formlistEng = listEng;
+
+        arNum = new int[count]();
+
+        /* Start challenge */
+        FormO->lEdit->returnPressed();
+        FormO->lEdit->setFocus();
+
+    }else if(challengeVar){
+        //If Challenge VarWord
+        FormO->setVisible(false);
+        formVar->setVisible(true);
+    }
+    //delete chellange;
 }
 
 void MainWindow::setStyleClick(QPushButton *b)
@@ -178,6 +226,7 @@ void MainWindow::CorrectAnswer(QString word)
         {
             qDebug()<<"LastWord = "<<arNum[count - 1];
             numWord = arNum[count - 1];
+            FormO->CorrectWeng = "not zero";
             break;
         }else{
 
@@ -281,41 +330,17 @@ void MainWindow::on_pushButton_Click_clicked()
         ui->pushButton_words->setVisible(false);
         ui->pushButton_lvl->setVisible(false);
         ui->pushButton_Settings->setVisible(false);
+
+        FormO->CorrectWeng = "not zero";
     }
 
 }
 
 void MainWindow::on_pushButton_Write_clicked()
 {
-    /* Choose challenge */
-    QMessageBox msgBox;
-    msgBox.setText("Choose what chlange do you want.");
-    QPushButton *WriteButton = msgBox.addButton(tr("Write"), QMessageBox::ActionRole);
-    QPushButton *GuessButton = msgBox.addButton(tr("Guess"), QMessageBox::ActionRole);
-    QPushButton *abortButton = msgBox.addButton(QMessageBox::Abort);
-    msgBox.exec();
+    chellange->show();
 
     ui->pushButton_Write->setEnabled(false);
-
-    if (msgBox.clickedButton() == WriteButton) {
-        //Challenge OneWord
-        FormO->setVisible(true);
-        formVar->setVisible(false);
-        /* send lists of Word */
-        FormO->formlistRus = listRus;
-        FormO->formlistEng = listEng;
-arNum = new int[count]();
-        /* Start challenge */
-        FormO->lEdit->returnPressed();
-        FormO->lEdit->setFocus();
-    }else if (msgBox.clickedButton() == GuessButton){
-        //If Challenge VarWord
-        FormO->setVisible(false);
-        formVar->setVisible(true);
-    }else if (msgBox.clickedButton() == abortButton) {
-        // abort
-    }
-
 }
 
 void MainWindow::on_pushButton_lvl_clicked()

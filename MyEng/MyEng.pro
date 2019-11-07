@@ -17,17 +17,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    challenges.cpp \
     formone.cpp \
     formvar.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    challenges.h \
     formone.h \
     formvar.h \
     mainwindow.h
 
 FORMS += \
+    challenges.ui \
     formone.ui \
     formvar.ui \
     mainwindow.ui

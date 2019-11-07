@@ -1,3 +1,4 @@
+debug/challenges.o
 debug/formone.o
 debug/formvar.o
 debug/main.o
@@ -6,6 +7,7 @@ debug/Updater.o
 debug/Downloader.o
 debug/QSimpleUpdater.o
 debug/qrc_qsimpleupdater.o
+debug/moc_challenges.o
 debug/moc_formone.o
 debug/moc_formvar.o
 debug/moc_mainwindow.o

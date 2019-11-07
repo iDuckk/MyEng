@@ -6,6 +6,8 @@
 #include <QSimpleUpdater.h>
 #include "formone.h"
 #include "formvar.h"
+#include "challenges.h"
+
 #include <QPushButton>
 #include <QMessageBox>
 #include <QString>
@@ -37,6 +39,8 @@ private:
 
     FormOne *FormO;
     FormVar *formVar;
+    Challenges *chellange;
+
     QString wordMain;
 
     QSqlDatabase db;
@@ -50,6 +54,8 @@ private:
 
     bool start = true;
     bool equal = false;
+    bool challengeOneW = false;
+    bool challengeVar = false;
 
     void setStyleClick(QPushButton* b);
     void setStyleButton(QPushButton* b);
@@ -65,6 +71,10 @@ private slots:
 
     void CorrectAnswer(QString word);
     void WrongAnswer(QString word);
+
+    void RadioCheckOne(bool check);
+    void RadioCheckVar(bool check);
+    void StartChallengeMain();
 
 signals:
         void sendWordline(QString, QString);
