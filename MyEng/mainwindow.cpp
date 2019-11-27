@@ -5,7 +5,7 @@ static const QString DEFS_URL = "file:///D:/Repository/MyEng/QSimpleUpdater/defi
 
 /********** TASK TASK TASK TASK TASK ****************************
 
-    Сделать OneWord функцию, а не в кнопке
+    Создать базу данных
 
 *****************************************************************/
 MainWindow::MainWindow(QWidget *parent)
@@ -43,6 +43,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     /* chllenge Window */
     chellange = new Challenges(this);
+    chellange->lvl->addItem("WORDS");
+    Level = chellange->lvl->itemText(16);
+    qDebug()<<Level;
+
     connect(chellange,SIGNAL(RadioOneW(bool)),this,SLOT(RadioCheckOne(bool))); //if challenge OneWOrd
     connect(chellange,SIGNAL(RadioVar(bool)),this,SLOT(RadioCheckVar(bool))); //If challenge Var
     connect(chellange, SIGNAL(StartChallenge()), this, SLOT(StartChallengeMain())); //start challenge
@@ -351,7 +355,8 @@ void MainWindow::on_pushButton_lvl_clicked()
     FormO->setEnabled(true);
     /* Create query */
     query = QSqlQuery("db");
-    QString str = "SELECT *FROM WORDS;";
+    QString str = "SELECT *FROM " + Level + ";";
+    //QString str = "SELECT *FROM WORDS;";
     query.exec(str);
     /* GET words */
     while (query.next()) {

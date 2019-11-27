@@ -42,6 +42,7 @@ private:
     Challenges *chellange;
 
     QString wordMain;
+    QString Level;
 
     QSqlDatabase db;
     QSqlQuery query;
