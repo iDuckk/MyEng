@@ -111,6 +111,7 @@ void MainWindow::RadioCheckVar(bool check)
 
 void MainWindow::StartChallengeMain()
 {
+    ui->pushButton_words->setVisible(true);
     // Set data Base ****************
     QString Level;
     Level = chellange->lvl->currentText() + chellange->part->currentText();
@@ -123,6 +124,7 @@ void MainWindow::StartChallengeMain()
     QString str = "SELECT *FROM `" + Level + "`;";
     //QString str = "SELECT *FROM WORDS;";
     query.exec(str);
+
     /* GET words */
     while (query.next()) {
         count++;
@@ -131,6 +133,7 @@ void MainWindow::StartChallengeMain()
         //QMessageBox::information(this, "Check", query.value(2).toString());
     }
     emit CapacityWords(count);
+    emit sendListToWords(listEng, listRus);
     //*******************************
     if(challengeOneW)
     {
@@ -334,6 +337,9 @@ void MainWindow::on_pushButton_Click_clicked()
     {
         ui->pushButton_Click->setText("S&top");
 
+        wrds = new Words(this); //create Words windows
+        connect(this, SIGNAL(sendListToWords(QStringList, QStringList)), wrds, SLOT(setListWords(QStringList, QStringList))); //Send list words of challeng's part
+
         FormO->DefaultLineEdit();
         ui->pushButton_lvl->setEnabled(true);
 
@@ -341,12 +347,15 @@ void MainWindow::on_pushButton_Click_clicked()
         /* Set buttons are visiable*/
         ui->pushButton_About->setVisible(true);
         ui->pushButton_Write->setVisible(true);
-        ui->pushButton_words->setVisible(true);
+        //ui->pushButton_words->setVisible(true);
         ui->pushButton_lvl->setVisible(true);
         ui->pushButton_Settings->setVisible(true);
         ui->pushButton_Write->setEnabled(true);
     }else{
         ui->pushButton_Click->setText("S&tart");
+
+        delete wrds;    //delete Words window
+
         formVar->setEnabled(false);
         formVar->setVisible(false);
         FormO->setEnabled(false);
@@ -416,4 +425,9 @@ void MainWindow::on_pushButton_About_clicked()
 void MainWindow::on_pushButton_Settings_clicked()
 {
 
+}
+
+void MainWindow::on_pushButton_words_clicked()
+{
+    wrds->show();
 }

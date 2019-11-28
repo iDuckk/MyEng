@@ -4,9 +4,11 @@
 #include <QMainWindow>
 #include <QTcpSocket>
 #include <QSimpleUpdater.h>
+
 #include "formone.h"
 #include "formvar.h"
 #include "challenges.h"
+#include "words.h"
 
 #include <QPushButton>
 #include <QMessageBox>
@@ -40,6 +42,7 @@ private:
     FormOne *FormO;
     FormVar *formVar;
     Challenges *chellange;
+    Words *wrds;
 
     QString wordMain;
 
@@ -76,9 +79,12 @@ private slots:
     void RadioCheckVar(bool check);
     void StartChallengeMain();
 
+    void on_pushButton_words_clicked();
+
 signals:
         void sendWordline(QString, QString);
         void CapacityWords(int num);
         void CurrentWord(int num);
+        void sendListToWords(QStringList, QStringList);
 };
 #endif // MAINWINDOW_H

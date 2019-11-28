@@ -3,6 +3,7 @@ release/formone.o
 release/formvar.o
 release/main.o
 release/mainwindow.o
+release/words.o
 release/Updater.o
 release/Downloader.o
 release/QSimpleUpdater.o
@@ -11,6 +12,7 @@ release/moc_challenges.o
 release/moc_formone.o
 release/moc_formvar.o
 release/moc_mainwindow.o
+release/moc_words.o
 release/moc_QSimpleUpdater.o
 release/moc_Updater.o
 release/moc_Downloader.o

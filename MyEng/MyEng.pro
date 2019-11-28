@@ -21,19 +21,22 @@ SOURCES += \
     formone.cpp \
     formvar.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    words.cpp
 
 HEADERS += \
     challenges.h \
     formone.h \
     formvar.h \
-    mainwindow.h
+    mainwindow.h \
+    words.h
 
 FORMS += \
     challenges.ui \
     formone.ui \
     formvar.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    words.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
