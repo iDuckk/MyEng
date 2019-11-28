@@ -161,7 +161,7 @@ public:
     void retranslateUi(QWidget *FormOne)
     {
         FormOne->setWindowTitle(QApplication::translate("FormOne", "Form", nullptr));
-        label_2->setText(QApplication::translate("FormOne", "<html><head/><body><p><span style=\" font-size:16pt;\">Progress:</span></p></body></html>", nullptr));
+        label_2->setText(QApplication::translate("FormOne", "<html><head/><body><p><span style=\" font-size:16pt;\">Words:</span></p></body></html>", nullptr));
         lineEdit_count->setInputMask(QString());
         lineEdit_count->setText(QApplication::translate("FormOne", "0", nullptr));
         label_salsh->setText(QApplication::translate("FormOne", "<html><head/><body><p><span style=\" font-size:20pt;\">/</span></p></body></html>", nullptr));

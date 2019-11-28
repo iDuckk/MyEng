@@ -78,3 +78,13 @@ void FormOne::on_lineEdit_returnPressed()
     }
 
 }
+
+void FormOne::MainCount(int num)
+{
+    ui->lineEdit_count_2->setText(QString::number(num)); //Set capacity of parts`s words
+}
+
+void FormOne::CurrentCount(int num)
+{
+    ui->lineEdit_count->setText(QString::number(num));  //Set current number of word
+}

@@ -42,7 +42,6 @@ private:
     Challenges *chellange;
 
     QString wordMain;
-    QString Level;
 
     QSqlDatabase db;
     QSqlQuery query;
@@ -79,5 +78,7 @@ private slots:
 
 signals:
         void sendWordline(QString, QString);
+        void CapacityWords(int num);
+        void CurrentWord(int num);
 };
 #endif // MAINWINDOW_H

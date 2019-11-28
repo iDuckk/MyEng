@@ -32,6 +32,8 @@ private slots:
     void on_pushButton_play_clicked();
     void getLineWords(QString, QString);
     void on_lineEdit_returnPressed();
+    void MainCount(int num);
+    void CurrentCount(int num);
 
 private:
     Ui::FormOne *ui;

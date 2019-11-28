@@ -35,17 +35,17 @@ MainWindow::MainWindow(QWidget *parent)
     connect(FormO, SIGNAL(CorrectWord(QString)), this, SLOT(CorrectAnswer(QString))); //*** if CORRECT word *** recieved word from FormOne`s lineEdit
     connect(FormO, SIGNAL(WrongWord(QString)), this, SLOT(WrongAnswer(QString))); //*** if WRONG word *** recived word from FormOne`s lineEdit
     connect(this, SIGNAL(sendWordline(QString, QString)), FormO, SLOT(getLineWords(QString, QString))); //send word from MaindWindow(db) to FORMONE`s lable
+    connect(this, SIGNAL(CapacityWords(int)),FormO, SLOT(MainCount(int)));
+    connect(this, SIGNAL(CurrentWord(int)),FormO, SLOT(CurrentCount(int)));
 
     /* Create Widget of chalange VarWord */
     formVar = new FormVar(ui->widget_one);
     formVar->setVisible(false);
     formVar->setEnabled(false);
 
-    /* chllenge Window */
+    /* challenge Window */
     chellange = new Challenges(this);
-    chellange->lvl->addItem("WORDS");
-    Level = chellange->lvl->itemText(16);
-    qDebug()<<Level;
+    //chellange->lvl->addItem("WORDS");
 
     connect(chellange,SIGNAL(RadioOneW(bool)),this,SLOT(RadioCheckOne(bool))); //if challenge OneWOrd
     connect(chellange,SIGNAL(RadioVar(bool)),this,SLOT(RadioCheckVar(bool))); //If challenge Var
@@ -86,6 +86,9 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    db.close();
+    qDebug()<<"Close Database";
+
     delete FormO;
     delete formVar;
     delete chellange;
@@ -108,6 +111,27 @@ void MainWindow::RadioCheckVar(bool check)
 
 void MainWindow::StartChallengeMain()
 {
+    // Set data Base ****************
+    QString Level;
+    Level = chellange->lvl->currentText() + chellange->part->currentText();
+    qDebug()<<"level: "<<Level;
+
+    formVar->setEnabled(true);
+    FormO->setEnabled(true);
+    /* Create query */
+    query = QSqlQuery("db");
+    QString str = "SELECT *FROM `" + Level + "`;";
+    //QString str = "SELECT *FROM WORDS;";
+    query.exec(str);
+    /* GET words */
+    while (query.next()) {
+        count++;
+        listEng<<query.value(1).toStringList();
+        listRus<<query.value(2).toStringList();
+        //QMessageBox::information(this, "Check", query.value(2).toString());
+    }
+    emit CapacityWords(count);
+    //*******************************
     if(challengeOneW)
     {
         //Challenge OneWord
@@ -208,7 +232,7 @@ void MainWindow::CorrectAnswer(QString word)
     qDebug()<<word;
 
     int numWord = 0;
-
+    CurrentWord(finish + 1);
     /************ Set a new word, that it do not repeat  **************/
 
     for (int i = 0; i < finish || finish == 0; i++) {
@@ -320,7 +344,7 @@ void MainWindow::on_pushButton_Click_clicked()
         ui->pushButton_words->setVisible(true);
         ui->pushButton_lvl->setVisible(true);
         ui->pushButton_Settings->setVisible(true);
-        ui->pushButton_Write->setEnabled(false);
+        ui->pushButton_Write->setEnabled(true);
     }else{
         ui->pushButton_Click->setText("S&tart");
         formVar->setEnabled(false);
@@ -348,24 +372,24 @@ void MainWindow::on_pushButton_Write_clicked()
 }
 
 void MainWindow::on_pushButton_lvl_clicked()
-{
+{/*
     ui->pushButton_Write->setEnabled(true);
     ui->pushButton_lvl->setEnabled(false);
     formVar->setEnabled(true);
     FormO->setEnabled(true);
-    /* Create query */
-    query = QSqlQuery("db");
-    QString str = "SELECT *FROM " + Level + ";";
+    // Create query */
+/*    query = QSqlQuery("db");
+    QString str = "SELECT *FROM `" + Level + "`;";
     //QString str = "SELECT *FROM WORDS;";
     query.exec(str);
-    /* GET words */
-    while (query.next()) {
+    // GET words */
+/*    while (query.next()) {
         count++;
         listEng<<query.value(1).toStringList();
         listRus<<query.value(2).toStringList();
         //QMessageBox::information(this, "Check", query.value(2).toString());
     }
-
+*/
 }
 
 void MainWindow::on_pushButton_About_clicked()
