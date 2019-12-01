@@ -246,6 +246,7 @@ Makefile: ../MyEng/MyEng.pro ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/mks
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/mkspecs/features/lex.prf \
 		../MyEng/MyEng.pro \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Widgets.prl \
+		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Multimedia.prl \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Gui.prl \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Sql.prl \
 		../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Network.prl \
@@ -437,6 +438,7 @@ Makefile: ../MyEng/MyEng.pro ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/mks
 ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/mkspecs/features/lex.prf:
 ../MyEng/MyEng.pro:
 ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Widgets.prl:
+../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Multimedia.prl:
 ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Gui.prl:
 ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Sql.prl:
 ../../../ProgramFiles(x86)/Qt/5.12.0/mingw73_64/lib/Qt5Network.prl:

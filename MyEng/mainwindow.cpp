@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
     FormO->setVisible(false);
     FormO->setEnabled(false);
 
+    connect(FormO, SIGNAL(clickedPlay()), this, SLOT(playWord()));
     connect(FormO, SIGNAL(CorrectWord(QString)), this, SLOT(CorrectAnswer(QString))); //*** if CORRECT word *** recieved word from FormOne`s lineEdit
     connect(FormO, SIGNAL(WrongWord(QString)), this, SLOT(WrongAnswer(QString))); //*** if WRONG word *** recived word from FormOne`s lineEdit
     connect(this, SIGNAL(sendWordline(QString, QString)), FormO, SLOT(getLineWords(QString, QString))); //send word from MaindWindow(db) to FORMONE`s lable
@@ -59,7 +60,6 @@ MainWindow::MainWindow(QWidget *parent)
     }else{
         qDebug()<<"Database opened";
     }
-
 
 //*************************************************************************************************************************************
 
@@ -225,6 +225,43 @@ void MainWindow::setStyleButton(QPushButton *b)
                      "color: red} ");
 }
 
+void MainWindow::PlayAudioFile() //Play Audio
+{
+    QByteArray *dataAudio = new QByteArray(); // Create Byte array for AudioText file
+
+    QAudioFormat format;    //Set options of audio Output
+    format.setChannelCount(2);
+    format.setSampleRate(24000);
+    format.setSampleSize(8);
+    format.setCodec("audio/pcm");
+    format.setByteOrder(QAudioFormat::LittleEndian);
+    format.setSampleType(QAudioFormat::UnSignedInt);
+
+    audio = new QAudioOutput(QAudioDeviceInfo::defaultInputDevice(), format, this); //Create audio Output
+    audio->setBufferSize(10240);
+
+
+    while(1) //Do that until whole file will download
+    {
+        if(socket->waitForReadyRead(100)) //wait 1 sec
+            dataAudio->append(socket->readAll());   //Add part of file
+        else
+            break;  // If whole file downloaded
+    }
+
+    qDebug()<<"Playing file: "<<dataAudio->size();
+
+    QBuffer *buffer = new QBuffer(dataAudio);   //Create buffer that audioOutput can read it
+
+    QEventLoop *loop = new QEventLoop(this); //Create Loop for playing
+
+    buffer->open(QIODevice::ReadOnly);
+    audio->start(buffer);
+    loop->exec();   //Start loop
+
+    buffer->close();
+}
+
 void MainWindow::WrongAnswer(QString word)
 {
     QMessageBox::information(this, "Wrong!!", word);
@@ -317,11 +354,10 @@ void MainWindow::CorrectAnswer(QString word)
 
 void MainWindow::sockReady()
 {
-    if(socket->readAll() == "Yes")
+   /* if(socket->readAll() == "Yes")
     {
     socket->write("I am not here");
-   // ui->lineEdit->setText("sadfasdf");
-    }
+    }*/
 }
 
 void MainWindow::sockDisconnected()
@@ -403,13 +439,13 @@ void MainWindow::on_pushButton_lvl_clicked()
 
 void MainWindow::on_pushButton_About_clicked()
 {
-    QString s = "huj";
-    emit sendWordline("rus", "eng");
-    QMessageBox::warning(this, "poh", wordMain);
+    //QString s = "huj";
+    //emit sendWordline("rus", "eng");
+  /*  QMessageBox::warning(this, "connect to server", wordMain);
 
     if(!socket->isOpen())
     {
-        socket->connectToHost("127.0.0.1", 5000);
+        socket->connectToHost("192.168.1.148", 5000);
         socket->write("Push Button");
     }else{
         socket->disconnectFromHost();
@@ -417,9 +453,9 @@ void MainWindow::on_pushButton_About_clicked()
         socket->deleteLater();
 
         socket = new QTcpSocket(new QObject());
-        socket->connectToHost("127.0.0.1", 5000);
+        socket->connectToHost("192.168.1.148", 5000);
         socket->write("Again");
-    }
+    }*/
 }
 
 void MainWindow::on_pushButton_Settings_clicked()
@@ -430,4 +466,29 @@ void MainWindow::on_pushButton_Settings_clicked()
 void MainWindow::on_pushButton_words_clicked()
 {
     wrds->show();
+}
+
+void MainWindow::playWord()
+{
+    //QMessageBox::warning(this, "connect to server", wordMain);
+
+    if(!socket->isOpen())   //When you connect to server first time
+    {
+        socket->connectToHost("192.168.1.148", 5000);
+        socket->write("Play");
+
+        PlayAudioFile();
+    }else{                  //When you connect to server after first time =))))))))))))))
+        socket->disconnectFromHost();
+        socket->close();
+        socket->deleteLater();
+
+        socket = new QTcpSocket(new QObject());
+        socket->connectToHost("192.168.1.148", 5000);
+        socket->write("Play");
+
+        audio->stop();
+        audio->reset();
+        PlayAudioFile();
+    }
 }

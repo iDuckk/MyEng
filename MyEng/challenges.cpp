@@ -7,11 +7,13 @@ Challenges::Challenges(QWidget *parent) :
 {
     ui->setupUi(this);
 
+ui->radioButton_Variation->setEnabled(false);
+
     /* Choose lvl */
     lvl = ui->comboBox_lvl;
 
     /* Fill Levle comboBox*/
-   for(int i = 1; i < 17; i++)
+   for(int i = 1; i < 2; i++)
     {
         lvl->addItem(QString::number(i));
     }
@@ -39,13 +41,13 @@ void Challenges::level(int ind) // Fill "the Part comboBox" according to choice 
     case 0:
         part->clear();
         part->addItem("A");
-        part->addItem("B");
-        part->addItem("C");
-        part->addItem("D");
-        part->addItem("E");
-        part->addItem("F");
-        part->addItem("G");
-        part->addItem("H");
+         part->addItem("B");
+        //part->addItem("C");
+        //part->addItem("D");
+        //part->addItem("E");
+        //part->addItem("F");
+        //part->addItem("G");
+        //part->addItem("H");
         break;
     case 1:
         part->clear();

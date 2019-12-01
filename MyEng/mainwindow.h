@@ -20,6 +20,10 @@
 #include <QRandomGenerator>
 #include <windows.h>
 #include <QList>
+#include <QAudioOutput>
+#include <QBuffer>
+#include <QEventLoop>
+#include <QAudioFormat>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -50,6 +54,8 @@ private:
     QSqlQuery query;
     QStringList listEng;
     QStringList listRus;
+    QAudioOutput *audio;
+
     int count = 0;
     int finish =0;
     int LastWord;
@@ -59,9 +65,12 @@ private:
     bool equal = false;
     bool challengeOneW = false;
     bool challengeVar = false;
+    bool AudioPlaying;
 
     void setStyleClick(QPushButton* b);
     void setStyleButton(QPushButton* b);
+
+    void PlayAudioFile();
 public slots:
     void sockReady();
     void sockDisconnected();
@@ -80,6 +89,8 @@ private slots:
     void StartChallengeMain();
 
     void on_pushButton_words_clicked();
+
+    void playWord();
 
 signals:
         void sendWordline(QString, QString);

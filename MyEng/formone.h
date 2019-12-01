@@ -34,12 +34,12 @@ private slots:
     void on_lineEdit_returnPressed();
     void MainCount(int num);
     void CurrentCount(int num);
-
 private:
     Ui::FormOne *ui;
 signals:
         void CorrectWord(QString);
         void WrongWord(QString);
+        void clickedPlay();
 };
 
 #endif // FORMONE_H

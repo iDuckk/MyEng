@@ -7,15 +7,18 @@
 #include <QTcpSocket>
 #include <QDebug>
 #include <QByteArray>
-
+#include <QFile>
 
 class MyTask :public QObject, public QRunnable
 {
     Q_OBJECT
 public:
     MyTask();
+
     int SocketDescriptor;
+
     QByteArray Data;
+    QByteArray itogAudio;
 
     QTcpSocket* socket;
 protected:

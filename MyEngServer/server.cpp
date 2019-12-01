@@ -2,8 +2,8 @@
 
 Server::Server()
 {
-    pool = new QThreadPool(this);
-    pool->setMaxThreadCount(5000);
+    pool = new QThreadPool(this);   //Create new pool for multy stream
+    pool->setMaxThreadCount(5000);  //User's capaciry
 }
 
 
@@ -27,53 +27,30 @@ if (this->listen(QHostAddress::Any,5000))
 
 void Server::incomingConnection(qintptr socketDescriptor)
 {
-    /*
-    socket = new QTcpSocket(new QObject());
+    MyTask *task = new MyTask();    //Create new task
 
-    socket->setSocketDescriptor(socketDescriptor);
+    task->setAutoDelete(true);  //autodelete
 
-        connect(socket,SIGNAL(readyRead()),this,SLOT(sockReady()));
-        connect(socket,SIGNAL(disconnected()),this,SLOT(sockDisconect()));
+    connect(task,SIGNAL(sentData(QByteArray)),this,SLOT(getData(QByteArray))); //Recieve ASK from Clients
 
-    qDebug()<<socketDescriptor<<" Client connected";
+    task->SocketDescriptor = socketDescriptor;  //set Decsriptor of client's socket
 
-    //"key":"value" or value
-    //{"type":"connect","status":"yes"}
-
-    //socket->write("{\"type\":\"connect\",\"status\":\"yes\"}");
-    socket->write("you are connect");
-    //qDebug()<<"Send client connect status - YES";
-    */
-   // socket = new QTcpSocket(new QObject());
-
-   // socket->setSocketDescriptor(socketDescriptor);
-    // connect(socket,SIGNAL(readyRead()),this,SLOT(sockReady()));
-
-    MyTask *task = new MyTask();
-
-    task->setAutoDelete(true);
-
-    connect(task,SIGNAL(sentData(QByteArray)),this,SLOT(getData(QByteArray)));
-
-    task->SocketDescriptor = socketDescriptor;
-
-    pool->start(task);
+    pool->start(task); //Start multy stream
 }
 
 void Server::getData(QByteArray data)
 {
-    qDebug()<<"get Data: "<<data;
+    qDebug()<<"server.cpp - get Data: "<<data; //Receive information from clients
 }
 
-void Server::sockReady()
+void Server::sockReady() //I did not use it, because of I get all information in TASK. And I dib not make Socket for Server.cpp
 {
-
-    Data = socket->readAll();
-    qDebug()<<"Data: "<<Data;
+   // Data = socket->readAll();
+   // qDebug()<<"Data sockReady: "<<Data;
 }
 
-void Server::sockDisconect()
+void Server::sockDisconect()    //I did not use it, because of I get all information in TASK. And I dib not make Socket for Server.cpp
 {
-    qDebug()<<"Disconnect";
-    socket->deleteLater();
+   // qDebug()<<"Disconnect";
+   // socket->deleteLater();
 }

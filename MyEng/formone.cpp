@@ -7,8 +7,6 @@ FormOne::FormOne(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
-
     lEdit = ui->lineEdit; // I did this so I could use it in mainwindow
 
     /* Change style of button */
@@ -56,7 +54,7 @@ void FormOne::DefaultLineEdit()
 
 void FormOne::on_pushButton_play_clicked()
 {
-
+    emit clickedPlay();
 }
 
 void FormOne::getLineWords(QString Wrus, QString wEng)

@@ -5,6 +5,8 @@
 #include <QTcpSocket>
 #include <QJsonDocument>
 #include <QThreadPool>
+#include <QFile>
+
 #include "mytask.h"
 
 class Server : public QTcpServer
@@ -17,6 +19,7 @@ public:
     QByteArray Data;
     QByteArray *Data1;
     QJsonDocument doc;
+
 public slots:
     void startServer();
     void incomingConnection(qintptr socketDescriptor);
