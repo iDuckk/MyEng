@@ -89,6 +89,8 @@ MainWindow::~MainWindow()
     db.close();
     qDebug()<<"Close Database";
 
+    delete audio;
+    delete wrds;
     delete FormO;
     delete formVar;
     delete chellange;
@@ -231,14 +233,14 @@ void MainWindow::PlayAudioFile() //Play Audio
 
     QAudioFormat format;    //Set options of audio Output
     format.setChannelCount(2);
-    format.setSampleRate(24000);
-    format.setSampleSize(8);
+    format.setSampleRate(44100);  //44100 - 24000
+    format.setSampleSize(16);      //16 - 8
     format.setCodec("audio/pcm");
     format.setByteOrder(QAudioFormat::LittleEndian);
-    format.setSampleType(QAudioFormat::UnSignedInt);
+    format.setSampleType(QAudioFormat::SignedInt);    //SignedInt - UnSignedInt
 
     audio = new QAudioOutput(QAudioDeviceInfo::defaultInputDevice(), format, this); //Create audio Output
-    audio->setBufferSize(10240);
+    audio->setBufferSize(20240);
 
 
     while(1) //Do that until whole file will download
@@ -271,7 +273,7 @@ void MainWindow::CorrectAnswer(QString word)
 {
     qDebug()<<word;
 
-    int numWord = 0;
+    numWord = 0;
     CurrentWord(finish + 1);
     /************ Set a new word, that it do not repeat  **************/
 
@@ -289,7 +291,7 @@ void MainWindow::CorrectAnswer(QString word)
             break;
         }
 
-        /* Last word, if finish  ==  10 */
+        /* Last word */
         if(finish == count)
         {
             qDebug()<<"LastWord = "<<arNum[count - 1];
@@ -298,7 +300,7 @@ void MainWindow::CorrectAnswer(QString word)
             break;
         }else{
 
-        /* if finish  !=  10 */
+        /* if finish  does not equal the last word */
         for(int i = 0; i < finish ; i++)
         {
             if(arNum[i] == numWord) //Seek the word, that do not repeat.
@@ -318,14 +320,13 @@ void MainWindow::CorrectAnswer(QString word)
             numWord = QRandomGenerator::global()->bounded(count);       //Generate a new word's number
             i = 0;                                                     // Start from the beginning loop  of "Set a new word"
         }else{
-            qDebug()<<"Not equal"  <<numWord;
+            qDebug()<<"Not equal"  <<numWord;                       //If word doed not the same
             arNum[finish] = numWord;
             break;
         }
 
         }
     }
-
         /******************* Checking words ***********************/
 
     if(FormO->CorrectWeng == "not zero") //This will do if it is the first step
@@ -472,10 +473,15 @@ void MainWindow::playWord()
 {
     //QMessageBox::warning(this, "connect to server", wordMain);
 
+    QString path = "D:/Qt Project/" +chellange->lvl->currentText() + chellange->part->currentText() + "/" + listEng.at(numWord) +".wav";  //"D:/Qt Project/Untitled.wav" - Path of track
+
+    QByteArray Data;
+    Data.append(path);
+
     if(!socket->isOpen())   //When you connect to server first time
     {
         socket->connectToHost("192.168.1.148", 5000);
-        socket->write("Play");
+        socket->write(Data);
 
         PlayAudioFile();
     }else{                  //When you connect to server after first time =))))))))))))))
@@ -485,7 +491,7 @@ void MainWindow::playWord()
 
         socket = new QTcpSocket(new QObject());
         socket->connectToHost("192.168.1.148", 5000);
-        socket->write("Play");
+        socket->write(Data);
 
         audio->stop();
         audio->reset();

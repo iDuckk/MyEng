@@ -54,6 +54,7 @@ void FormOne::DefaultLineEdit()
 
 void FormOne::on_pushButton_play_clicked()
 {
+    ui->lineEdit->setFocus();
     emit clickedPlay();
 }
 

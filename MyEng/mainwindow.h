@@ -60,6 +60,7 @@ private:
     int finish =0;
     int LastWord;
     int *arNum;
+    int numWord = 0;
 
     bool start = true;
     bool equal = false;

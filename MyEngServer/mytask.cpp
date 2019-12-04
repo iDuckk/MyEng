@@ -20,10 +20,13 @@ void MyTask::run()
 
     qDebug()<<"Server my task - recieved Client's data: "<<Data;
 
-    if(Data == "Play")  //Send audio file
-    {
+    //if(Data == "Play")  //Send audio file
+    //{
+        QString path = (Data); //"D:/Qt Project/Untitled.wav"
+        qDebug()<<"server path"<<path;
+
         QFile f;
-        f.setFileName("D:/Qt Project/Бутырка - Запахло Весной (2).wav");    //opent Audio File as a Text
+        f.setFileName(path);    //opent Audio File as a Text
 
         if(f.open(QIODevice::ReadOnly | QIODevice::Truncate))
         {
@@ -31,13 +34,15 @@ void MyTask::run()
 
             itogAudio.clear();  //For reason, that if you use it again
             itogAudio.append(f.readAll());  //add text audio
-
+            itogAudio.remove(0, 140);       //delete title of .WAV audioFile
+            itogAudio.chop(140);            //delete the end of file
             f.close();
 
              socket->write(itogAudio);   //sending
             //socket->write(QByteArray::number(itogAudio.size()));       //Send Size Auto
         }
-    }/*else if(Data == "Ok")  //Send audio file
+   // }
+        /*else if(Data == "Ok")  //Send audio file
     {
         qDebug()<<"Server my task - send audio ";
 
